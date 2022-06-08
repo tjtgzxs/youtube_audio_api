@@ -6,7 +6,7 @@ channel_id: your channel id
 authorization: youtube studio http header authorization
 cookie: youtube studio http header cookie
 """
-channel_id = "xxxxxxxx"
-authorization = "xxxxxxxx"
-cookie = "xxxxxxxx"
+channel_id = "UCLGWHWLYw2HczekevyB_Pvg"
+authorization = "SAPISIDHASH 1654672465_838a59b48a46492b1da9475d0a521c10c80d1851"
+cookie = "VISITOR_INFO1_LIVE=XJmxzS-TMj4; PREF=tz=Etc.Unknown; YSC=eAwadLO2guM; SID=KwggJcz8aCKuvOA7Tj_2d_yVxCjEjpyjh1JFwCPhYbcaIJt2t6l9bX4xReBn2_BHnrPRPg.; __Secure-1PSID=KwggJcz8aCKuvOA7Tj_2d_yVxCjEjpyjh1JFwCPhYbcaIJt20laSGjKa3L_tAW4B5hRHMQ.; __Secure-3PSID=KwggJcz8aCKuvOA7Tj_2d_yVxCjEjpyjh1JFwCPhYbcaIJt23lI_4D8tlLxciASdXLagug.; HSID=A4SxO4Fane1kw6vZS; SSID=A3f8qK79VDeSaUhT9; APISID=vaAqhGTJpZTI-bKH/AzrvVAhD9QHtNo53x; SAPISID=BrHmeqBTU2MJywne/AHqavuY0lyXANpcDV; __Secure-1PAPISID=BrHmeqBTU2MJywne/AHqavuY0lyXANpcDV; __Secure-3PAPISID=BrHmeqBTU2MJywne/AHqavuY0lyXANpcDV; LOGIN_INFO=AFmmF2swRgIhAPJGyDouQyCjs7AWe_Ddfthm0_q2I1vGcIEwOBde8CFUAiEA3tFf-aMB1MiPU4UARM1UM6uUW0sVX0wmjmhBOuCElg8:QUQ3MjNmd2hGeGJVVHZwWF9KUVRCSUxZQzRYUlVJLTYzSTdKa21ZSmtGRlVrbzBEaTR1NUZ3cHBHczJUa3U2MVFVd3BTQU5EMDlIeFFmYlRHWUxHNzVWdHRUVUd4Rmo1dmtOSF80b0FLY0VJTHFVWTlDb25JY2xqUlpUVzhqMk5OUFpMdDRBb0FoNE5ic0dxc3VHMUFmbElyMEY1Si1QaHlB; SIDCC=AJi4QfE1v_ZIiDoHBuB6v6qLTQkrG3_N9cnE9WMVxiv3z5NII_UwFzW2-xLBJr6VKoGpvl-oTg; __Secure-3PSIDCC=AJi4QfFbXk1JBAp31ZPMTLIqIFq7a-LJpRf_HBzsAyh3oZ9Mq9ytSAM_vIrMXMJfirqX50KzM0s"
 

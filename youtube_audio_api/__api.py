@@ -105,7 +105,7 @@ class API(object):
         return urllib.request.Request(url, data=data,
                                       headers={"Authorization": self.authorization, "Cookie": self.cookie,
                                                "Origin": "https://studio.youtube.com",
-                                               "Content-Type": "application/json", "X-Goog-AuthUser": "1"},
+                                               "Content-Type": "application/json", "X-Goog-AuthUser": "3"},
                                       method="POST")
 
     def create_body(self) -> defaultdict:
