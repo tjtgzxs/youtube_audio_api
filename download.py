@@ -54,9 +54,9 @@ VALUES(
     %(external_artist_url)s
 );
  """
-    cnx = mysql.connector.connect(user='youtube', password='youtubeyoutube',
-                                  host='127.0.0.1',
-                                  database='youtube')
+    cnx = mysql.connector.connect(user='upload', password='aeFrXiD2AZpAFMF2',
+                                  host='158.101.31.7',
+                                  database='upload')
     cursor = cnx.cursor()
 
     for track in tracks:
