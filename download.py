@@ -16,7 +16,7 @@ import secret
 from youtube_audio_api import API, TrackType
 from youtube_audio_api import TrackOrder, OrderField, OrderDirection
 
-DOWNLOAD_PATH = "/Users/apple/Downloads/ytmusic/"
+DOWNLOAD_PATH = "C:\\Users\\tgfhzd\\Downloads\\ytmusic\\"
 
 api = API(secret.channel_id, secret.authorization, secret.cookie)
 
