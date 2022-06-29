@@ -13,10 +13,12 @@ import mysql.connector
 import wget
 
 import secret
-from youtube_audio_api import API, TrackType
+from youtube_audio_api import API, TrackType,Mood,Genre
 from youtube_audio_api import TrackOrder, OrderField, OrderDirection
 
+
 DOWNLOAD_PATH = "C:\\Users\\tgfhzd\\Downloads\\ytmusic\\"
+
 
 api = API(secret.channel_id, secret.authorization, secret.cookie)
 
@@ -132,10 +134,10 @@ def download_tracks(track_ids: list[str]):
 def track_list_gen() -> List:
     page_token = None
     while True:
-        resp = api.list_tracks(track_type_in=[TrackType.MUSIC, TrackType.SOUNDEFFECT],
+        resp = api.list_tracks(track_type_in=[TrackType.MUSIC],
                                track_order=TrackOrder(orderField=OrderField.TRACK_TITLE,
                                                       orderDirection=OrderDirection.ASC),
-                               page_token=page_token, page_size=50)
+                               page_token=page_token, page_size=50,genre_in=[Genre.AMBIENT],mood_in=[Mood.CALM])
         page_token = resp.get("pageInfo", {}).get("nextPageToken")
         total_size = int(resp.get("pageInfo", {}).get("totalSizeInfo", {}).get("size", 0))
         print("total_size=", total_size, "  page_token=", page_token)
