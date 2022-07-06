@@ -8,7 +8,7 @@ import os.path
 import time
 from functools import reduce
 from typing import List
-
+import os
 import mysql.connector
 import wget
 
@@ -16,7 +16,7 @@ import secret
 from youtube_audio_api import API, TrackType
 from youtube_audio_api import TrackOrder, OrderField, OrderDirection
 
-DOWNLOAD_PATH = "/Users/apple/Downloads/ytmusic/"
+DOWNLOAD_PATH = os.getenv("MUSIC_PATH")
 
 api = API(secret.channel_id, secret.authorization, secret.cookie)
 
@@ -54,9 +54,9 @@ VALUES(
     %(external_artist_url)s
 );
  """
-    cnx = mysql.connector.connect(user='youtube', password='youtubeyoutube',
-                                  host='127.0.0.1',
-                                  database='youtube')
+    cnx = mysql.connector.connect(user=os.getenv("DB_USER"), password=os.getenv("DB_PASS"),
+                                  host=os.getenv("DB_HOST"),
+                                  database=os.getenv("DB_DATABASE"))
     cursor = cnx.cursor()
 
     for track in tracks:

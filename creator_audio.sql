@@ -8,7 +8,7 @@ CREATE TABLE `creator_audio` (
   `category` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `genres` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `moods` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `instruments` json DEFAULT NULL,
+  `instruments` text DEFAULT NULL,
   `publish_time` datetime DEFAULT NULL,
   `viper_id` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `license_type` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
