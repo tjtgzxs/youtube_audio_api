@@ -17,7 +17,7 @@ from youtube_audio_api import API, TrackType,Mood,Genre
 from youtube_audio_api import TrackOrder, OrderField, OrderDirection
 
 DOWNLOAD_PATH = os.getenv("MUSIC_PATH")
-
+print(DOWNLOAD_PATH)
 api = API(secret.channel_id, secret.authorization, secret.cookie)
 
 
@@ -57,6 +57,9 @@ VALUES(
     cnx = mysql.connector.connect(user=os.getenv("DB_USER"), password=os.getenv("DB_PASS"),
                                   host=os.getenv("DB_HOST"),
                                   database=os.getenv("DB_DATABASE"))
+    print(os.getenv("DB_USER"), os.getenv("DB_PASS"),
+                                  os.getenv("DB_HOST"),
+                                  os.getenv("DB_DATABASE"))
     cursor = cnx.cursor()
 
     for track in tracks:
