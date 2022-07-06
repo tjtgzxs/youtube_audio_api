@@ -16,7 +16,7 @@ import secret
 from youtube_audio_api import API, TrackType,Mood,Genre
 from youtube_audio_api import TrackOrder, OrderField, OrderDirection
 
-DOWNLOAD_PATH = os.getenv("MUSIC_PATH")
+DOWNLOAD_PATH = os.getenv("music_path")
 print(DOWNLOAD_PATH)
 api = API(secret.channel_id, secret.authorization, secret.cookie)
 
