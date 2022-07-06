@@ -94,7 +94,7 @@ VALUES(
     cnx.close()
 
 
-def download_tracks(track_ids: list[str]):
+def download_tracks(track_ids: List[str]):
     for track_id in track_ids:
 
         tmp_fname = DOWNLOAD_PATH + track_id + "." + str(
