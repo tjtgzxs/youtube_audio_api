@@ -11,7 +11,6 @@ from typing import List
 import os
 import mysql.connector
 import wget
-from dotenv import load_dotenv
 import secret
 from youtube_audio_api import API, TrackType,Mood,Genre
 from youtube_audio_api import TrackOrder, OrderField, OrderDirection
