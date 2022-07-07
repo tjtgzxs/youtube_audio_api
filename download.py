@@ -14,7 +14,6 @@ import wget
 import secret
 from youtube_audio_api import API, TrackType,Mood,Genre
 from youtube_audio_api import TrackOrder, OrderField, OrderDirection
-load_dotenv()
 
 DOWNLOAD_PATH = os.getenv("MUSIC_PATH")
 print(DOWNLOAD_PATH)
