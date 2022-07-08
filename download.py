@@ -150,23 +150,24 @@ def track_list_gen() -> List:
 
 
 def main():
-    pool = multiprocessing.Pool(8)
+    # pool = multiprocessing.Pool(8)
 
     track_gen = track_list_gen()
 
     for tracks in track_gen:
         # mysql_tracks(tracks)
 
-        while pool._taskqueue.qsize() > 8:
-            time.sleep(1)
+        # while pool._taskqueue.qsize() > 8:
+        time.sleep(1)
 
         track_ids = [t["trackId"] for t in tracks]
-        pool.apply_async(download_tracks, args=(track_ids,))
+        # pool.apply_async(download_tracks, args=(track_ids,))
+        download_tracks(track_ids)
         mysql_tracks(tracks)
 
-    print('Waiting for all subprocesses done...')
-    pool.close()
-    pool.join()
+    # print('Waiting for all subprocesses done...')
+    # pool.close()
+    # pool.join()
 
 
 if __name__ == '__main__':
