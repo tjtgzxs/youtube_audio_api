@@ -150,7 +150,7 @@ def track_list_gen() -> List:
 
 
 def main():
-    pool = multiprocessing.Pool(8)
+    pool = multiprocessing.Pool(16)
 
     track_gen = track_list_gen()
 
