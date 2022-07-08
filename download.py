@@ -155,13 +155,14 @@ def main():
     track_gen = track_list_gen()
 
     for tracks in track_gen:
-        mysql_tracks(tracks)
+        # mysql_tracks(tracks)
 
         while pool._taskqueue.qsize() > 8:
             time.sleep(1)
 
         track_ids = [t["trackId"] for t in tracks]
         pool.apply_async(download_tracks, args=(track_ids,))
+        mysql_tracks(tracks)
 
     print('Waiting for all subprocesses done...')
     pool.close()
